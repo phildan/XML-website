@@ -32,8 +32,8 @@ title {
 	font-weight : bold; 
 } 
 
-body {
-	background-image: url("drew-hays-img1-unsplash.jpg");
+#Background {
+	background-size: 360px;
 
 }
 
