@@ -1,0 +1,22 @@
+/* Top left text */
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  /* Top right text */
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;}
+
+
+
+    .top-centre {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
