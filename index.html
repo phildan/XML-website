@@ -1,70 +1,44 @@
 <!doctype html>
+<html ⚡ lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="This is the AMP Boilerplate.">
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+    <link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <!-- Import other AMP Extensions here -->
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <style amp-custom>
+    /* Add your styles here */
+    </style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+ 
+    <link rel="canonical" href=".">
+    <title>Philip Daniels</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
 
-<link rel="stylesheet" type="text/css" href="rule.css">
-
-<Style>
-
-.grid {
-
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-}
-
-</Style>
-
-<head> 
-<title> Philip Daniels</title>
-
-<body>
-<div>
-
-    <div>
-        <img src="img\drew-hays-img1-unsplash.jpg">
-        <style>
-            img{
-                width: 500px;
-            }
-            
-            </style>
-
-    </div>
-
-    <div id ="navbar">
-
-        
-            <a class="links" href="/home/" analytics="home">
-                <span class="text">Home</span>
-            </a>
-            <a class="links" href="/affiliates/" analytics="affiliates">
-                <span class="text">Affiliates</span>
-            </a>
-            <a class="links" href="/about/" analytics="about">
-                <span class="text">About</span>
-
-
-   
-
-
-
-
-<div>
-    <h1>Affiliates</h1>
-</div>
-
-<div>
-    <h1>About</h1>
-</div>
-
-</div>
-
-</body>
-
-<footer>
-
-<script src="//code.tidio.co/kylyokhecksbsh739owpzmxlsfnxzy17.js" async></script>
-
-
-</footer>
-
-
+    <ul>
+        <li>Home</li>
+        <li>Affiliates Program</li>
+        <li>About</li>
+    </ul>
+    <amp-analytics type="gtag" data-credentials="include">
+    <script type="application/json">
+    {
+      "vars" : {
+        "gtag_id": "UA-XXXXX-Y",
+        "config" : {
+          "UA-XXXXX-Y": {
+            "groups": "default"
+          }
+        }
+      }
+    }
+    </script>
+    </amp-analytics>
+  </body>
 </html>
