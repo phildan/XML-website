@@ -1,0 +1,55 @@
+[{
+    "Start":true,
+    "Goal":"Build webpage elements",
+    "Timeframe":null,
+    "Strategy":null,
+    "Entry":null,
+    "Exit":null,
+    "Other important rules":null,
+    "Money management":null
+},
+{
+
+    "Sunday 22nd of March 2020":"%",
+    "Saturday 21st of March 2020":"53%",
+    "Friday":"75%",
+    "Thursday":"50%",
+    "Wednesday":"31%",
+    "Tuesday":"40%",
+    "Monday":"34%",
+    "Sunday":"12%"
+},
+{
+    "Customer development":["Frictionless", "Rewarding", "Positive images"],
+    "null":"null"
+
+},
+{
+    "Easypower":[
+        {
+            "todo":"plan",
+            "start":true,
+            "Dropshiping":"upload to site"
+
+        }
+    ]
+},
+{
+    "personas":[
+        {"name":"shazz",
+            "employment": "Disability employment agency",
+            "passion": "Helping people with disabilities lead a better life",
+            "Loves":["his Harley", "his wife","3 kids"]
+
+        },
+        {"name":"Lucy",
+            "employment":"Corporate speaker Specialises in change "
+
+        }
+            
+        
+    ]
+}
+
+
+]

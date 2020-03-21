@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item" style="grid-area: premium;">
+            <h class="headline">Premium</h>
+            <p class="descrition">Full on and off page SEO</p>
+        </div>
+        <div class="grid-item" style="grid-area: standard;">
+            <h class="headline">Standard</h>
+            <p class="descrition">Full on and off page SEO</p>
+        </div>
+        <div class="grid-item" style="grid-area: basic;">
+            <h class="headline">Premium</h>
+            <p class="descrition">Full on and off page SEO</p>
+        </div>
+        <div class="grid_item" style="grid-area: label;">
+            <h class="lable">Competition</h>
+        </div>
+        <div class="grid-item">
+            <img src="#" alt="" class="data">
+        </div>
+        <div class="grid-item">
+            <img src="#" alt="" class="data">
+        </div>
+        <div class="grid-item">
+            <img src="#" alt="" class="data">
+        <div class="grid_item">
+            <h class="lable"></h>
+        </div>
+        <div class="grid-item">
+            <img src="#" alt="" class="data">
+        </div>
+        <div class="grid-item">
+            <img src="#" alt="" class="data">
+        </div>
+        <div class="grid-item">
+            <img src="#" alt="" class="data">
+        <div class="grid_item">
+            <h class="lable"></h>
+        </div>
+        <div class="grid-item">
+            <img src="#" alt="" class="data">
+        </div>
+        <div class="grid-item">
+            <img src="#" alt="" class="data">
+        </div>
+        <div class="grid-item">
+            <img src="#" alt="" class="data">
+        <div class="grid_item">
+            <h class="lable"></h>
+        </div>
+        <div class="grid-item">
+            <img src="#" alt="" class="data">
+        </div>
+        <div class="grid-item">
+            <img src="#" alt="" class="data">
+        </div>
+        <div class="grid-item">
+            <img src="#" alt="" class="data">
+        </div>
+        <div class="grid-item">
+            <h class="offer"></h>
+            <div class="button"></div>
+        </div>
+        <div class="grid-item">
+            <h class="offer"></h>
+            <div class="button"></div>
+        </div>
+        <div class="grid-item">
+            <h class="offer"></h>
+            <div class="button"></div>
+        </div>
+    </div>
+    <style>
+        .grid-container{
+            display:grid;
+            /*grid-template-columns: repeat(4,200px);
+            grid-template-rows: repeat(6,100px);*/
+            grid-template-areas:
+            'empty premium standard basic'
+            'label data data data'
+            'label data data data'
+            'label data data data'
+            'label data data data'
+            'empty offer offer offer';
+            grid-gap:2px;
+        }
+    </style>
+</body>
+</html> 
