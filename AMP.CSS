@@ -5,10 +5,18 @@ amp-custom>
   /* any custom style goes here */
   body {
     background-color: white;
+    
   }
   .label{
       padding: 2em;
   }
+  .price{
+      font-weight: bold;
+  }
+  .padding{
+      padding-top: 1.5em !important;
+  }
+
   amp-img {
     background-color: gray;
     border: 1px solid black;
