@@ -1,0 +1,137 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Hello, AMPs</title>
+    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+  <body>
+   <div class="table">
+       <table class="table">
+           <thead>
+               <th>#</th>
+               <th>Premium</th>
+               <th>Standard</th>
+               <th>Basic</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="#">Competitor analysis</td>
+                    <td data-label="Premium"><img src="img\Data__Tick.png" alt="Tick of approval" class=""></td>
+                    <td data-label="Standard"><img src="img\Data__Tick.png" alt="Tick of approval" class=""></td>
+                    <td data-label="Basic"><img src="img\Data__Tick.png" alt="Tick of approval" class=""></td>
+                </tr>
+                <tr>
+                    <td data-label="#">Keyword analysis</td>
+                    <td data-label="Premium"><img src="img\Data__Tick.png" alt="Tick of approval" class=""></td>
+                    <td data-label="Standard"><img src="img\Data__Tick.png" alt="Tick of approval" class=""></td>
+                    <td data-label="Basic"><img src="img\Data__Tick.png" alt="Tick of approval" class=""></td>
+                </tr>
+                <tr>
+                    <td data-label="#">Backlinks</td>
+                    <td data-label="Premium">30</td>
+                    <td data-label="Standard">30</td>
+                    <td data-label="Basic">30</td>
+                </tr>
+                <tr>
+                    <td data-label="#">Delivery time</td>
+                    <td data-label="Premium">1 day</td>
+                    <td data-label="Standard">1 day</td>
+                    <td data-label="Basic">1 day</td>
+                </tr>
+                <tr>
+                    <td data-label="#"></td>
+                    <td data-label="Premium">$350</td>
+                    <td data-label="Standard">$300</td>
+                    <td data-label="Basic">$250</td>
+                </tr>
+                <tr>
+                    <td data-label="#"></td>
+                    <td data-label="Premium"><img class="select___button" src="img/buttonPremium.png" alt=""></td>
+                    <td data-label="Standard"><img class="select___button" src="img/buttonPremium.png" alt=""></td>
+                    <td data-label="Basic"><img class="select___button" src="img/buttonPremium.png" alt=""></td>
+                </tr>
+            </tbody>
+       </table>
+       <style>
+           body{
+               margin:0;
+               padding: 20px;
+               font-family: Arial, Helvetica, sans-serif;
+           }
+           .select___button{
+               width: 50px !important;
+              
+           }
+           *{
+               box-sizing: border-box;
+           }
+           .table{
+               width: 100%;
+               border-collapse: collapse;
+           }
+           .table td, .table th{
+               padding: 12px 15px;
+               border: 1px;
+               text-align: center;
+               font-size: 16px;
+
+           }
+           .table th{
+               background-color: darkblue;
+               color: #fff;
+           }
+           .table tbody{
+               background-color:null;
+           }
+           @media (max-width: 500px){
+               .table thead{
+                   display: none;
+               }
+               .table, .table tbody, .table tr, .table td{
+                   display: block;
+               }
+               .table tr{
+                   margin-bottom: 15px;
+               }
+               .table td{
+                   text-align: right;
+                   padding-left: 50%;
+                   position: relative;
+                   text-align: right;
+
+               }
+               .table td::before{
+                   content: attr(data-label);
+                   padding-left: 15px;
+                   position: absolute;
+                   left: 0;
+                   width:50%;
+                   font-size: 15px;
+                   font-weight: bold;
+                   text-align: left;
+
+               }
+           }
+       </style>
+   </div>
+  </body>
+
+</html>
