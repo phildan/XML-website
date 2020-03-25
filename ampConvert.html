@@ -10,11 +10,11 @@
     <header>
         <div class="logo"></div>
     </header>
-    <div class="main d-flex justify-content-center">
+    <div class="main d-flex justify-content-between">
         
         <div class="ad">
             <div class="headline"><h2>Ready. Set. Grow!</h2></div>
-            <div class="button"><button type="button" class="btn btn-between">Primary</button></div>        
+            <div class="button"><img src="img/buttonYellow.png" alt=""></div>        
         </div>
         <div class="image">
             <img class="convert" src="img/Best-Converting-Image.png" alt="">
@@ -26,14 +26,19 @@
         .main{
             position: relative;
             display: flex;
+            flex-wrap: wrap-reverse;
         }
         .convert{
             width: 100%;
+            padding-top: 30px;
         }
         .ad{         
             text-align: left;
+            padding:2em;
         }
-      
+        h2{
+            font-size: 130px;
+        }   
     </style>
-  </body>
+</body>
 </html>
