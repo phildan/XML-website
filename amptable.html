@@ -26,44 +26,53 @@
    <div class="table">
        <table class="table">
            <thead>
-               <th>#</th>
-               <th>Premium</th>
-               <th>Standard</th>
-               <th>Basic</th>
+               <th></th>
+               <th>
+                   <h class="headline">Premium</h>
+                   <p class="description">Complete <br> on and off page SEO</p>
+               </th>
+               <th>
+                   <h class="headline">Standard</h>
+                   <p class="description">Complete <br> on page SEO</p>
+               </th>
+               <th>
+                   <h class="headline">Basic</h>
+                   <p class="description">Complete <br> off page SEO</p>
+               </th>
             </thead>
             <tbody>
                 <tr>
-                    <td data-label="#">Competitor analysis</td>
+                    <td data-label="Service">Competitor analysis</td>
                     <td data-label="Premium"><img src="img\Data__Tick.png" alt="Tick of approval" class=""></td>
                     <td data-label="Standard"><img src="img\Data__Tick.png" alt="Tick of approval" class=""></td>
                     <td data-label="Basic"><img src="img\Data__Tick.png" alt="Tick of approval" class=""></td>
                 </tr>
                 <tr>
-                    <td data-label="#">Keyword analysis</td>
+                    <td data-label="Service">Keyword analysis</td>
                     <td data-label="Premium"><img src="img\Data__Tick.png" alt="Tick of approval" class=""></td>
                     <td data-label="Standard"><img src="img\Data__Tick.png" alt="Tick of approval" class=""></td>
                     <td data-label="Basic"><img src="img\Data__Tick.png" alt="Tick of approval" class=""></td>
                 </tr>
                 <tr>
-                    <td data-label="#">Backlinks</td>
+                    <td data-label="Service">Backlinks</td>
                     <td data-label="Premium">30</td>
                     <td data-label="Standard">30</td>
                     <td data-label="Basic">30</td>
                 </tr>
                 <tr>
-                    <td data-label="#">Delivery time</td>
+                    <td data-label="Service">Delivery time</td>
                     <td data-label="Premium">1 day</td>
                     <td data-label="Standard">1 day</td>
                     <td data-label="Basic">1 day</td>
                 </tr>
                 <tr>
-                    <td data-label="#"></td>
+                    <td data-label="Service"></td>
                     <td data-label="Premium">$350</td>
                     <td data-label="Standard">$300</td>
                     <td data-label="Basic">$250</td>
                 </tr>
                 <tr>
-                    <td data-label="#"></td>
+                    <td data-label="Service"></td>
                     <td data-label="Premium"><img class="select___button" src="img/buttonPremium.png" alt=""></td>
                     <td data-label="Standard"><img class="select___button" src="img/buttonPremium.png" alt=""></td>
                     <td data-label="Basic"><img class="select___button" src="img/buttonPremium.png" alt=""></td>
@@ -71,6 +80,19 @@
             </tbody>
        </table>
        <style>
+         
+          
+       
+           .description{
+               font-weight: normal;
+               
+           }
+           body > div > table > tbody > tr:nth-child(5) > td.dTime
+           .dTime{
+               font-weight: bold;
+               text-align: left !important;
+           }
+           
            body{
                margin:0;
                padding: 20px;
@@ -90,16 +112,19 @@
            .table td, .table th{
                padding: 12px 15px;
                border: 1px;
-               text-align: center;
-               font-size: 16px;
+               text-align: left;
+               
 
            }
            .table th{
-               background-color: darkblue;
-               color: #fff;
+               color: rgb(0, 0, 0);
+               font-size: 24px;
            }
            .table tbody{
                background-color:null;
+           }
+           .table td{
+               font-size: 24px;
            }
            @media (max-width: 500px){
                .table thead{
@@ -124,7 +149,7 @@
                    position: absolute;
                    left: 0;
                    width:50%;
-                   font-size: 15px;
+                   font-size: 24px;
                    font-weight: bold;
                    text-align: left;
 
