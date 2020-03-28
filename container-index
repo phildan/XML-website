@@ -1,0 +1,291 @@
+<!doctype html>
+<html ⚡>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta name="description" content="This is the AMP Boilerplate.">
+    <link rel="canonical" href=".">
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="AMP.CSS" rel="stylesheet">
+    <style>
+        @media only screen and (min-width: 600px){.floatbar{display:flex;justify-content:space-between;align-items:center;position:absolute;top:20px;right:50px;z-index:2;flex-direction:row}}.floatbar ul{margin:0;padding:0;display:flex}.floatbar li{list-style:none}.floatbar li a{text-decoration:none;padding:1rem;display:block}.floatbar li a:hover{color:#f0ffff}*{box-sizing:border-box}@media only screen and (max-width: 600px){.floatbar ul{display:block!important}.hamburger_wrapper{padding:5px;z-index:10;display:flex;justify-content:flex-end}#hamburger{width:60px;height:45px;position:relative;cursor:pointer;outline:none}#hamburger span{display:block;position:absolute;height:9px;width:100%;background:#ffffff;border-radius:9px;opacity:1;left:0;transform:rotate(0deg);transition:.5s ease-in-out}#hamburger span:nth-child(1){top:0;transform-origin:left center}#hamburger span:nth-child(2){top:21px;transform-origin:left center}#hamburger span:nth-child(3){top:42px;transform-origin:left center}#nav-menu{position:relative;transform:translateX(-100vw);opacity:0;z-index:10;transition:transform .5s ease,opacity ease .2s;height:100vh}.nav-list{padding:10px;height:100vh;font-size:2em}}.main{position:relative;display:flex;flex-wrap:wrap-reverse}.convert{width:100%;padding-top:30px}.ad{text-align:left;padding:2em;width:50%}h2{font-size:130px}.button{width:300px;align-content:center}.description{font-weight:400}body{margin:0;padding:20px;font-family:Arial,Helvetica,sans-serif}.select___button{width:50px!important}*{box-sizing:border-box}.table{width:100%;border-collapse:collapse}.table td,.table th{padding:12px 15px;border:1px;text-align:left}.table th{color:#000;background:#fff;font-size:24px}.table tbody{background-color:#fff}.table td{font-size:24px}@media (max-width: 500px){.table thead{display:none}.table,.table tbody,.table tr,.table td{display:block}.table tr{margin-bottom:15px}.table td{text-align:right;padding-left:50%;position:relative;text-align:right}.table td::before{content:attr(data-label);padding-left:15px;position:absolute;left:0;width:50%;font-size:24px;font-weight:700;text-align:left}}
+    </style>
+    <title>My AMP Page</title>
+  </head>
+ 
+         <!-- ## Markup -->
+  <!--
+    The hamburger menu element contains three styled `span` elements inside a `div`. The hamburger `div` uses the `tap` AMP action to trigger the `toggleClass()` event, which targets an element by its `id`. In this example, it targets `hamburger`.
+
+    The `toggleClass()` event will add and remove any class it's given as an argument. This example passes `class='close'`. Additionally, it toggles an animation class for the navigation menu to slide out. 
+  -->
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <!-- 
+    ## Introduction 
+    Small interactive UI animations communicate state and purpose to users. A common case is a hamburger menu button that animates into an "X" when open. This animation communicates that the user can press the same button again to close the menu. 
+
+    ## CSS animations
+    Below is the custom styles and CSS animations for the hamburger menu: 
+  -->
+  <style amp-custom>
+    @media only screen and (min-width: 600px){
+        .floatbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            top: 20px;
+            right: 50px;
+            z-index: 2;
+            flex-direction: row;
+        }
+    }
+        .floatbar ul{
+            margin: 0;
+            padding: 0;
+            display:flex;  
+        }
+        .floatbar li {
+            list-style: none;
+        }
+        .floatbar li a {
+            text-decoration: none;
+            padding:1rem;
+            display:block;
+        }
+        .floatbar li a:hover {
+            color: azure;
+        }
+        
+    
+        
+       
+        * {
+    box-sizing: border-box;
+}
+
+
+      
+    @media only screen and (max-width: 600px){
+      .floatbar ul{
+            display: block !important;
+            
+      }
+        .hamburger_wrapper {
+        padding: 5px;
+        z-index: 10;
+        display:flex;
+        justify-content:flex-end;
+        
+      }
+    
+
+      #hamburger {
+        width: 60px;
+        height: 45px;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+        
+		
+      }
+      #hamburger span {
+        display: block;
+        position: absolute;
+        height: 9px;
+        width: 100%;
+        background:#005af0;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+      }
+
+      #hamburger span:nth-child(1) {
+        top: 0px;
+        transform-origin: left center;
+      }
+
+      #hamburger span:nth-child(2) {
+        top: 21px;
+        transform-origin: left center;
+      }
+
+      #hamburger span:nth-child(3) {
+        top: 42px;
+        transform-origin: left center;
+      }
+
+      #hamburger.close span:nth-child(1) {
+        transform: rotate(45deg);
+      }
+
+      #hamburger.close span:nth-child(2) {
+        width: 0%;
+        opacity: 0;
+        transition: .1s;
+      }
+
+      #hamburger.close span:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+      #nav-menu {
+        position: absolute;
+        transform: translateX(-100vw);
+        opacity: 0;
+        z-index: 10;
+        transition: transform .5s ease, opacity ease .2s;
+        height:100%;
+        width: 100vh;
+        
+
+      }
+
+      #nav-menu.now-active {
+        transform: translateX(0);
+        transition: transform .5s ease, opacity ease .2s;
+        opacity: 1;
+        background-color:#eaeaea;
+      }
+
+      .nav-list {
+        padding: 10px;
+        height: 100vh;
+        font-size: 2em;
+        z-index: 1001;
+      }
+
+    }
+    
+    </style>
+</head>
+<body>
+  <div class="container">
+  <!-- ## Markup -->
+  <!--
+    The hamburger menu element contains three styled `span` elements inside a `div`. The hamburger `div` uses the `tap` AMP action to trigger the `toggleClass()` event, which targets an element by its `id`. In this example, it targets `hamburger`.
+
+    The `toggleClass()` event will add and remove any class it's given as an argument. This example passes `class='close'`. Additionally, it toggles an animation class for the navigation menu to slide out. 
+  -->
+  <div>
+    <header>
+      <div class="logo"><img src="img/Logo.png" alt=""></div>
+      <style>
+          .logo{
+              position: absolute;
+              left: 0px;
+              top: 0px;
+          }
+
+      </style>
+    <div class="hamburger_wrapper">
+      <div id="hamburger" tabindex="1" role="button" on="tap:hamburger.toggleClass(class='close'),nav-menu.toggleClass(class='now-active')">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  <div class="floatbar">
+        <div id="nav-menu">
+            <ul class="nav-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+        </div>
+  </div>
+    
+    <div>
+    </div>
+  </div>
+    </header>
+      
+   
+    <div class="clearfix"></div>
+    <style>
+      header{
+        height: 100px;
+      }
+    </style>
+      <section class="best-converting">
+        <img src="https://source.unsplash.com/random" alt="Unsplash" class="img-fluid">
+        <h1>We have the best converting offers you will ever see. <br><a href="/join/join.php?action=join_default" class="btn btn-primary">Signup</a></h1>
+      </section>
+
+      <style>
+        .best-converting{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            position: relative;
+            width: 100%;
+        }
+      </style>
+        
+   
+    <section class="second">
+        <div class="table">
+            <table class="table">
+                <thead>
+                    <th></th>
+                    <th>
+                        <h class="headline">Premium</h>
+                        <p class="description">Complete <br> on and off page SEO</p>
+                    </th>
+                    <th>
+                        <h class="headline">Standard</h>
+                        <p class="description">Complete <br> on page SEO</p>
+                    </th>
+                    <th>
+                        <h class="headline">Basic</h>
+                        <p class="description">Complete <br> off page SEO</p>
+                    </th>
+                 </thead>
+                 <tbody>
+                     <tr>
+                         <td data-label="Service">Competitor analysis</td>
+                         <td data-label="Premium"><img src="img\Data__Tick.png" alt="Tick of approval" class=""></td>
+                         <td data-label="Standard"><img src="img\Data__Tick.png" alt="Tick of approval" class=""></td>
+                         <td data-label="Basic"><img src="img\Data__Tick.png" alt="Tick of approval" class=""></td>
+                     </tr>
+                     <tr>
+                         <td data-label="Service">Keyword analysis</td>
+                         <td data-label="Premium"><img src="img\Data__Tick.png" alt="Tick of approval" class=""></td>
+                         <td data-label="Standard"><img src="img\Data__Tick.png" alt="Tick of approval" class=""></td>
+                         <td data-label="Basic"><img src="img\Data__Tick.png" alt="Tick of approval" class=""></td>
+                     </tr>
+                     <tr>
+                         <td data-label="Service">Backlinks</td>
+                         <td data-label="Premium">30</td>
+                         <td data-label="Standard">30</td>
+                         <td data-label="Basic">30</td>
+                     </tr>
+                     <tr>
+                         <td data-label="Service">Delivery time</td>
+                         <td data-label="Premium">1 day</td>
+                         <td data-label="Standard">1 day</td>
+                         <td data-label="Basic">1 day</td>
+                     </tr>
+                     <tr>
+                         <td data-label="Service"></td>
+                         <td data-label="Premium">$350</td>
+                         <td data-label="Standard">$300</td>
+                         <td data-label="Basic">$250</td>
+                     </tr>
+                     <tr>
+                         <td data-label="Service"></td>
+                         <td data-label="Premium"><img class="select___button" src="img/buttonPremium.png" alt=""></td>
+                         <td data-label="Standard"><img class="select___button" src="img/buttonPremium.png" alt=""></td>
+                         <td data-label="Basic"><img class="select___button" src="img/buttonPremium.png" alt=""></td>
+                     </tr>
+                 </tbody>
+            </table>
+        </div>
+    </section>
+  </div><!--Container-->
+  </body>
+</html>
