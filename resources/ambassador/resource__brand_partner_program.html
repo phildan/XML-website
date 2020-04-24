@@ -6,14 +6,14 @@
     <meta name="description" content="This is the AMP Boilerplate.">
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
     <script async src="https://cdn.ampproject.org/v0.js"></script>
-    <!-- Import other AMP Extensions here -->
+    <script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
     <style amp-custom>
     /* Add your styles here */
     </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="canonical" href=".">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Brand ambassador program</title>
   </head>
   <body>
@@ -24,54 +24,38 @@
             </a>
           </nav>
     </header>
+    
     <div class="hero">
-      <section>
-        <main class="col">
-          <!--***********************************
-          ***********************************
-            This section is to inspire the reader to join the brand partner program.
-          -->
-        <div class="inspire">
-          <h1>pdSEO brand partner program</h1>
-          <button>Test</button>
-          <p>By becoming a brand partner you agree to align yourself to the values of pdSEO.</p>
-          <P>Our core mission is to elimiante agency costs one search at a time.</P>
-          <p>To do this we have a team</p>
-          <p></p>
-          <p></p>
-
-        </div>
-        <style>
-          .inspire{
-            margin: 2em;
-            font-family: 'Montserrat', sans-serif;
-
-          }
-        </style>
-        </main> 
+      <h1 amp-fx="parallax" data-parallax-factor="1.7">pdSEO <br> brand partner program</h1>
+      <p><a href="redirect.html">redirect</a></p>
     </div>
     <style>
       .hero{
         height: 100vh;
         width: 100vw;
-        background-image: url(https://source.unsplash.com/random);
+        background-image: url(img/nikita-kachanovsky-bLY5JqP_Ldw-unsplash-min.jpg);
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         text-align: center;
-        color: white;
-        text-shadow: 1px 1px 2px black;
+        color: #ffff00;
+        text-shadow: 1px 1px 2px#999999;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 10vw;
+        font-size: 5vw !important;
       }
     </style>
-          
-    </section>
-    <footer>
-      
-    </footer>   
+    <div class="control">
+      <div class="icon"></div>
+      <style>
+        .icon{
+          background-image: url(#);
+          position: sticky;
+
+        }
+      </style>
+    </div>
   </body>
 </html>
